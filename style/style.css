@@ -23,11 +23,11 @@
 
 
 /* header */
-/* Navigation */
 .header{
     max-width: 1310px;
     margin: 0 auto;
 }
+/* Navigation */
 .nav{
     align-items: center;
     gap: 580px;
@@ -70,13 +70,27 @@
    max-width: 440px;
    background-image: url(../images/Circle\ design.svg);
 }
+/* main */
+main{
+    max-width: 1110px;
+    margin: 0 auto;
+}
 /* Sponsor */
+.sponsor{
+    margin-top: 120px;
+}
+.sponsor-container{
+    gap: 70px;
+    justify-content: center;
+    box-shadow: 20px 50px 20px   rgba(50, 90, 133, 0.21);
+    padding: 20px 50px;
+    
+}
 
 /* Responsive */
 /* Mobile */
 @media screen and (max-width:576px) {
-      /* header */
-      
+      /* header */  
     .nav,.nav-links{
         flex-direction: column;
         gap: 20px;
@@ -96,14 +110,32 @@
        background-image: url(../images/Circle\ design.svg);
        background: none;
     }
+    /* Sponsor */
+    .sponsor{
+        margin-top: 40px;
+    }
+    .sponsor-container{
+         box-shadow: none; 
+         gap: 15px; 
+        flex-wrap: wrap;
+    }
+    .sponsor-image{
+        width: 20%;
+       
+    }
+    .sponsor-image img{
+      max-width: 100%;
+    }
 }
 /* Tablet*/
 @media screen and (min-width:577px) and (max-width:992px){
-      /* header */
-      
+      /* header */  
     .nav,.nav-links{
-        flex-direction: column;
-        gap: 20px;
+       gap: 80px;
+       margin: 0 auto;
+    }
+    .nav-links{
+        gap: 45px;
     }
    
     .banner{
@@ -120,5 +152,21 @@
        max-width: 100%;
        background-image: url(../images/Circle\ design.svg);
        background: none;
+    }
+     /* Sponsor */
+    .sponsor{
+        margin-top: 40px;
+    }
+    .sponsor-container{
+         box-shadow: none; 
+         gap: 15px; 
+        flex-wrap: wrap;
+    }
+    .sponsor-image{
+        width: 20%;
+       
+    }
+    .sponsor-image img{
+      max-width: 100%;
     }
 }
